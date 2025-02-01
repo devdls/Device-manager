@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Manager - Registrar Dispositivo</title>
+    <link rel="stylesheet" href="../static/styles.css"> 
+</head>
+<body>
+    <div class="container">
+       
+        <h1>Register Device</h1>
+
+        
+        <form class="register-form">
+           
+            <label for="device">Device:</label>
+            <select id="device" name="device" required>
+                <option value="">Selecione o tipo de dispositivo</option>
+                <option value="Tablet">Tablet</option>
+                <option value="Smartphone">Smartphone</option>
+                <option value="Pen">Pen</option>
+                <option value="Keyboard">Keyboard</option>
+                <option value="Payment">Payment</option>
+            </select>
+
+           
+            <label for="modelo">Model:</label>
+            <select id="modelo" name="modelo" required>
+                <option value="">Selecione o modelo</option>
+                <option value="TL12">TL12</option>
+                <option value="T2060C">T2060C</option>
+                <option value="T2070D">T2070D</option>
+                <option value="T2060D">T2060D</option>
+                <option value="T2070E">T2070E</option>
+                <option value="T307G">T307G</option>
+                <option value="T307F">T307F</option>
+                <option value="T3010D">T3010D</option>
+                <option value="TL10">TL10</option>
+                <option value="T810C">T810C</option>
+                <option value="T2040">T2040</option>
+                <option value="T2080">T2080</option>
+                <option value="S675">S675</option>
+                <option value="TUPI1500">TUPI1500</option>
+                <option value="TUPI900">TUPI900</option>
+                <option value="Q03">Q03</option>
+                <option value="Q20">Q20</option>
+            </select>
+
+            
+            <label for="imei">IMEI:</label>
+            <input type="text" id="imei" name="imei" required>
+
+            
+            <label for="odm">ODM:</label>
+            <select id="odm" name="odm" required>
+                <option value="">Selecione o ODM</option>
+                <option value="ZTECH">ZTECH</option>
+                <option value="EPUDO">EPUDO</option>
+                <option value="HENA">HENA</option>
+                <option value="TEM">TEM</option>
+                <option value="NEBULLAR">NEBULLAR</option>
+            </select>
+
+           
+            <button type="submit" class="btn register-submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Manager</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://logodownload.org/wp-content/uploads/2018/09/positivo-logo-2.png" alt="Logo da Empresa" class="logo">
+      
+        <h1>Device Manager</h1>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <label for="username">User:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault(); 
+
+        
+        window.location.href = 'templates/devices.html';
+    });
+</script>

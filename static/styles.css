@@ -1,0 +1,193 @@
+
+body, h1, h2, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px; 
+    margin-bottom: 40px; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px; 
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    margin: 0 auto; 
+}
+
+.login-box h2 {
+    font-size: 1.5rem;
+    color: #0054A6; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-box label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0054A6; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #004080; 
+}
+
+
+.devices-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+}
+
+.devices-table th, .devices-table td {
+    padding: 15px; 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.devices-table th {
+    background-color: #0054A6; 
+    color: #fff;
+    font-size: 1.1rem; 
+}
+
+.devices-table td {
+    font-size: 1rem; 
+}
+
+.devices-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.my-devices-btn {
+    background-color: #0054A6; 
+    color: #fff;
+}
+
+.request-btn {
+    background-color: #28a745; 
+    color: #fff;
+}
+
+.register-btn {
+    background-color: #6c757d; 
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.register-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; 
+}
+
+.register-form label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.register-form select,
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.register-form select {
+    appearance: none; 
+    background-color: #fff;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0054A6; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #004080; 
+}

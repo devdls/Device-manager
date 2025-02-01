@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Manager - Dispositivos</title>
+    <link rel="stylesheet" href="../static/styles.css"> 
+</head>
+<body>
+    <div class="container">
+        
+        <table class="devices-table">
+            <thead>
+                <tr>
+                    <th>Device</th>
+                    <th>Modelo</th>
+                    <th>ODM</th>
+                    <th>IMEI</th>
+                    <th>Assigned</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tablet</td>
+                    <td>Vaio TL12</td>
+                    <td>ZTECH</td>
+                    <td>123456789012</td>
+                    <td>João Silva</td>
+                </tr>
+                <tr>
+                    <td>Tablet</td>
+                    <td>T2060C</td>
+                    <td>EPUDO</td>
+                    <td>123208989012</td>
+                    <td>Júlia Santos</td>
+                </tr>
+                <tr>
+                    <td>Tablet</td>
+                    <td>T307F</td>
+                    <td>HENA</td>
+                    <td>374656789012</td>
+                    <td>Carlos Rodrigo</td>
+                </tr>
+                <tr>
+                    <td>Tablet</td>
+                    <td>T2070E</td>
+                    <td>HENA</td>
+                    <td>123122289012</td>
+                    <td>Marina Lopes</td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td>T2070D</td>
+                    <td>ZTECH</td>
+                    <td>987654321098</td>
+                    <td>Maria Souza</td>
+                </tr>
+                <tr>
+                    <td>Caneta</td>
+                    <td>TL12</td>
+                    <td>ZTECH</td>
+                    <td>456789012345</td>
+                    <td>Pedro Oliveira</td>
+                </tr>
+                <tr>
+                    <td>Teclado</td> 
+                    <td>Vaio TL12</td>
+                    <td>ZTECH</td>
+                    <td>20250114</td>
+                    <td>Pedro Campos</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+        <div class="buttons-container">
+            <button class="btn my-devices-btn">My Devices</button>
+            <button class="btn request-btn">Request</button>
+            <button class="btn register-btn">Register</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector('.register-btn').addEventListener('click', function () {
+        window.location.href = 'register.html'; 
+    });
+</script>
