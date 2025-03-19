@@ -9,6 +9,8 @@
 <body>
     <div class="container">
         
+        <h1>Device Manager</h1>
+
         <table class="devices-table">
             <thead>
                 <tr>
@@ -72,17 +74,11 @@
             </tbody>
         </table>
 
-        
         <div class="buttons-container">
-            <button class="btn my-devices-btn">My Devices</button>
-            <button class="btn request-btn">Request</button>
-            <button class="btn register-btn">Register</button>
+            <button class="btn my-devices-btn" onclick="window.location.href='assign_device.html'">My Devices</button>
+            <button class="btn request-btn" onclick="window.location.href='request.html'">Request</button>
+            <button class="btn register-btn" onclick="window.location.href='register.html'">Register</button>
         </div>
     </div>
 </body>
 </html>
-<script>
-    document.querySelector('.register-btn').addEventListener('click', function () {
-        window.location.href = 'register.html'; 
-    });
-</script>

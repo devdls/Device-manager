@@ -1,9 +1,9 @@
 import sqlite3
 
-# Conecta ao banco de dados (cria se não existir)
+
 conn = sqlite3.connect('devices.db')
 
-# Cria uma tabela para dispositivos
+
 conn.execute('''
 CREATE TABLE IF NOT EXISTS devices (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -13,19 +13,19 @@ CREATE TABLE IF NOT EXISTS devices (
 )
 ''')
 
-# Função para adicionar um dispositivo
+
 def add_device(name, imei, assigned_to):
     conn.execute("INSERT INTO devices (name, imei, assigned_to) VALUES (?, ?, ?)", (name, imei, assigned_to))
     conn.commit()
     print(f"Dispositivo '{name}' adicionado com sucesso!")
 
-# Função para listar todos os dispositivos
+
 def list_devices():
     cursor = conn.execute("SELECT id, name, imei, assigned_to FROM devices")
     for row in cursor:
         print(f"ID: {row[0]}, Nome: {row[1]}, IMEI: {row[2]}, Assinado para: {row[3]}")
 
-# Função principal
+
 def main():
     while True:
         print("\n--- Gerenciador de Dispositivos ---")
@@ -46,10 +46,10 @@ def main():
         else:
             print("Opção inválida. Tente novamente.")
 
-    # Fecha a conexão com o banco de dados
+    
     conn.close()
     print("Programa encerrado.")
 
-# Executa o programa
+
 if __name__ == "__main__":
     main()
